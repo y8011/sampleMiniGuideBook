@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(data)
             areaList.append(key as! String)
         }
-        
+        self.title = "あいちめし"
         
     }
 

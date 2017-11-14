@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jFT-0D-zl1">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,18 +16,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleMiniGuideBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dWQ-Ih-bRm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cellko" id="l3f-cu-qcU">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l3f-cu-qcU" id="thA-ph-cRU">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -58,46 +58,47 @@
             <objects>
                 <viewController title="名古屋めし" modalPresentationStyle="currentContext" id="Y3B-Xq-9lt" customClass="DetailViewController" customModule="sampleMiniGuideBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WYm-bw-sNn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qhh-aq-qs6">
-                                <rect key="frame" x="16" y="69" width="288" height="144"/>
+                                <rect key="frame" x="20" y="69" width="728" height="144"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="144" id="ySO-aK-8LK"/>
+                                    <constraint firstAttribute="height" constant="144" id="U18-56-Y9v"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" pitchEnabled="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bF-UW-IXc">
-                                <rect key="frame" x="16" y="427" width="288" height="121"/>
-                            </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhZ-Tt-gks">
-                                <rect key="frame" x="16" y="211" width="288" height="198"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KtL-so-Jgx">
+                                <rect key="frame" x="20" y="844" width="728" height="164"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="198" id="ceS-eN-6nd"/>
+                                    <constraint firstAttribute="height" constant="164" id="dFZ-j1-EPg"/>
                                 </constraints>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhZ-Tt-gks">
+                                <rect key="frame" x="20" y="211" width="728" height="625"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="8bF-UW-IXc" firstAttribute="top" secondItem="vhZ-Tt-gks" secondAttribute="bottom" constant="18" id="ICM-Ud-lkr"/>
-                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="top" secondItem="veo-EZ-zRs" secondAttribute="top" constant="5" id="QwM-tk-gyH"/>
-                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="trailing" secondItem="WYm-bw-sNn" secondAttribute="trailingMargin" id="ScO-je-Zj0"/>
-                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="leading" secondItem="vhZ-Tt-gks" secondAttribute="leading" id="Vzx-OV-YZh"/>
-                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="trailing" secondItem="vhZ-Tt-gks" secondAttribute="trailing" id="YPW-9n-E8L"/>
-                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="leading" secondItem="WYm-bw-sNn" secondAttribute="leadingMargin" id="b1b-EY-Bv9"/>
-                            <constraint firstItem="vhZ-Tt-gks" firstAttribute="leading" secondItem="8bF-UW-IXc" secondAttribute="leading" id="dBN-Rw-nnB"/>
-                            <constraint firstItem="vhZ-Tt-gks" firstAttribute="top" secondItem="veo-EZ-zRs" secondAttribute="top" constant="147" id="tv9-zV-ZJP"/>
-                            <constraint firstItem="vhZ-Tt-gks" firstAttribute="trailing" secondItem="8bF-UW-IXc" secondAttribute="trailing" id="zt0-4Z-3v3"/>
+                            <constraint firstItem="KtL-so-Jgx" firstAttribute="top" secondItem="vhZ-Tt-gks" secondAttribute="bottom" constant="8" symbolic="YES" id="2Uh-1c-Bav"/>
+                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="leading" secondItem="veo-EZ-zRs" secondAttribute="leading" constant="20" id="DQW-GW-sIc"/>
+                            <constraint firstItem="veo-EZ-zRs" firstAttribute="bottom" secondItem="KtL-so-Jgx" secondAttribute="bottom" constant="16" id="EJK-Xl-nAr"/>
+                            <constraint firstItem="vhZ-Tt-gks" firstAttribute="leading" secondItem="KtL-so-Jgx" secondAttribute="leading" id="MjC-hK-a62"/>
+                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="trailing" secondItem="vhZ-Tt-gks" secondAttribute="trailing" id="ZUl-BP-3cb"/>
+                            <constraint firstItem="vhZ-Tt-gks" firstAttribute="top" secondItem="veo-EZ-zRs" secondAttribute="top" constant="147" id="dqs-Ye-Csh"/>
+                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="trailing" secondItem="WYm-bw-sNn" secondAttribute="trailingMargin" id="jOx-Fx-I4D"/>
+                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="leading" secondItem="vhZ-Tt-gks" secondAttribute="leading" id="keZ-fW-XZY"/>
+                            <constraint firstItem="vhZ-Tt-gks" firstAttribute="trailing" secondItem="KtL-so-Jgx" secondAttribute="trailing" id="ouN-GC-haj"/>
+                            <constraint firstItem="Qhh-aq-qs6" firstAttribute="top" secondItem="veo-EZ-zRs" secondAttribute="top" constant="5" id="uUl-lr-bFz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="veo-EZ-zRs"/>
                     </view>
                     <connections>
                         <outlet property="myImageView" destination="vhZ-Tt-gks" id="6ek-89-UTA"/>
-                        <outlet property="myMapView" destination="8bF-UW-IXc" id="oh7-8s-W4e"/>
+                        <outlet property="myMapView2" destination="KtL-so-Jgx" id="u67-Em-pOQ"/>
                         <outlet property="myTextView" destination="Qhh-aq-qs6" id="BOw-6q-usc"/>
                     </connections>
                 </viewController>
@@ -111,7 +112,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jFT-0D-zl1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OGQ-ae-PO3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

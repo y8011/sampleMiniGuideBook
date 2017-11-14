@@ -17,7 +17,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var myTextView: UITextView!
     @IBOutlet weak var myMapView: MKMapView!
-    
+    @IBOutlet weak var myMapView2: MKMapView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,13 +54,15 @@ class DetailViewController: UIViewController {
         let cPin = MKPointAnnotation()
         
         cPin.coordinate = CLLocationCoordinate2DMake(lat, long)
+        cPin.title = pName
         
-        //cPin.title = pName
-        let span = MKCoordinateSpanMake(0.1,0.1)
+        let span = MKCoordinateSpanMake(0.05,0.05)
         let region = MKCoordinateRegionMake(cPin.coordinate, span)
-        myMapView.setRegion(region, animated: true)
-        myMapView.addAnnotation(cPin)
+     //   myMapView.setRegion(region, animated: true)
+     //   myMapView.addAnnotation(cPin)
 
+        myMapView2.setRegion(region, animated: true)
+        myMapView2.addAnnotation(cPin)
         print("makeMap :")
         
     }
